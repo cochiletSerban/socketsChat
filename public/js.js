@@ -1,5 +1,5 @@
 // make socket connection
-var socket = io.connect('127.0.0.1:8080');
+var socket = io.connect('https://chatpw.herokuapp.com/');
 
 $(document).ready(() => {
   //event on send
