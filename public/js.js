@@ -38,3 +38,8 @@ $(document).ready(() => {
 
 
 });
+
+window.nebunie = function nebunie(yolo) {
+  if(yolo) alert('yes');
+  alert('nebunie');
+}
