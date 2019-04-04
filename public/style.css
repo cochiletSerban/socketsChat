@@ -3,6 +3,7 @@ body{
     background-color: rgb(5, 87, 128);
     margin:0;
     height: 100vh;
+
 }
 
 h2{
@@ -18,10 +19,21 @@ h2{
 }
 
 #chat-window{
-    height:87.6vh; 
     overflow: auto;
     background: #f9f9f9;
+    min-height: 90%;
+    max-height: 90%;
 }
+
+.inputs {
+    position: fixed;
+    right: 0;
+    bottom: 0; 
+    min-height: 10%;
+    width: 100%;
+}
+
+
 
 #output p{
     padding: 14px 0px;
