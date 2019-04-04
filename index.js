@@ -3,7 +3,6 @@ var app = express();
 var socket = require('socket.io');
 var cors = require('cors');
 
-app.use(cors());
 var server = app.listen(process.env.PORT, () => {
   console.log("listenig");
 });
@@ -11,6 +10,8 @@ var server = app.listen(process.env.PORT, () => {
 
 //satic server
 app.use(express.static('public'));
+
+app.use(cors());
 
 //socket
 var io = socket(server);
