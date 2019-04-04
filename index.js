@@ -1,7 +1,9 @@
 var express = require('express');
 var app = express();
 var socket = require('socket.io');
+var cors = require('cors');
 
+app.use(cors());
 var server = app.listen(process.env.PORT, () => {
   console.log("listenig");
 });
